@@ -5582,9 +5582,9 @@ MonoBehaviour:
   moveRate: 1
   smoothFactor: 10
   offsetNode: {fileID: 0}
-  posRelativeToCamera: {fileID: 330585545}
+  posRelativeToCamera: {fileID: 0}
   posRelOverlayColor: 0
-  groundedFeet: 1
+  groundedFeet: 0
   applyMuscleLimits: 1
   keepLastPose: 0
   horizontalOffset: 0
@@ -10747,6 +10747,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1296591180}
   - component: {fileID: 1296591179}
+  - component: {fileID: 1296591182}
+  - component: {fileID: 1296591181}
   m_Layer: 0
   m_Name: Kinect Controller
   m_TagString: Untagged
@@ -10771,8 +10773,8 @@ MonoBehaviour:
   sensorAngle: 0
   autoHeightAngle: 0
   computeUserMap: 3
-  computeColorMap: 1
-  computeInfraredMap: 1
+  computeColorMap: 0
+  computeInfraredMap: 0
   displayUserMap: 1
   displayColorMap: 1
   displaySkeletonLines: 1
@@ -10783,7 +10785,7 @@ MonoBehaviour:
   maxLeftRightDistance: 0
   maxTrackedUsers: 6
   showTrackedUsersOnly: 1
-  userDetectionOrder: 1
+  userDetectionOrder: 0
   centralPosition: {x: 0, y: 0, z: 0}
   ignoreInferredJoints: 0
   ignoreZCoordinates: 0
@@ -10826,6 +10828,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1296591181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296591178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71efa4381866a5a4a8e2eb39849873bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIndex: 0
+  gestureInfo: {fileID: 0}
+--- !u!114 &1296591182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296591178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b976a1901bb5d478901026c07729cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1500713284
 GameObject:
   m_ObjectHideFlags: 0
@@ -14821,7 +14849,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 55
+      m_Bits: 4294967295
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -16176,6 +16204,11 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 662bd2119d5ec7346b2a2d97be28f0da,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 662bd2119d5ec7346b2a2d97be28f0da,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6162274040497989121, guid: 662bd2119d5ec7346b2a2d97be28f0da,
