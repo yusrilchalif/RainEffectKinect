@@ -7,7 +7,7 @@ public class MultiDisplay : MonoBehaviour
     {
         if (Display.displays.Length > 1)
         {
-            Display.displays[1].Activate(Display.displays[1].systemWidth, Display.displays[1].systemHeight, 60);
+            Display.displays[1].Activate(Display.displays[1].systemWidth, Display.displays[1].systemHeight, 30);
         }
     }
 
