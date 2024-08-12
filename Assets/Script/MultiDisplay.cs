@@ -1,20 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MultiDisplay : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int monitor_count;
+
     void Start()
     {
-        if (Display.displays.Length > 1)
-        {
-            Display.displays[1].Activate(Display.displays[1].systemWidth, Display.displays[1].systemHeight, 30);
-        }
-    }
 
+        monitor_count = Display.displays.Length;
 
-    // Update is called once per frame
-    void Update()
-    {
+#if UNITY_EDITOR
+        Debug.Log("Editor only fix: set 3 monitors");
+        monitor_count = 3;
+#endif
+#if !UNITY_EDITOR
+            // activate monitors
+             for (int i = 1; i < monitor_count; i++)
+             {
+                 Display.displays[i].Activate();
+             }
+#endif
+
+        Debug.Log("monitor_count:"+ monitor_count);
 
     }
 }
