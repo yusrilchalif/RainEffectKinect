@@ -7250,7 +7250,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30000
+      scalar: 28000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10164,12 +10164,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     minKillSpeed: 0
-    maxKillSpeed: 10
+    maxKillSpeed: 12
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
       m_Bits: 64
-    maxCollisionShapes: 15000
+    maxCollisionShapes: 30000
     quality: 0
     voxelSize: 0.5
     collisionMessages: 0
@@ -12881,7 +12881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1975597044
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -16703,7 +16703,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     minKillSpeed: 10
-    maxKillSpeed: 10000
+    maxKillSpeed: 10
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
